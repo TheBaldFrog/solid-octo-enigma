@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  py-test-bot:
+    container_name: tgbotpostgres
+    build: .
+    command: python3.10 app.py
+    env_file:
+      - .env
+    restart: always
+    ports:
+      - "8443:3001"
+    networks:
+      - bot-network
+    depends_on:
+      - dp-postgres
+
+networks:
+  bot-network:
+    driver: bridge
