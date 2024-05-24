@@ -1,4 +1,4 @@
-from data.config import WEBHOOK_URL, WEBHOOK_PATH, WEBAPP_HOST, WEBAPP_PORT, WEBHOOK_HOST, IP
+from data.config import WEBHOOK_URL, WEBHOOK_PATH, WEBAPP_HOST, WEBAPP_PORT, WEBHOOK_HOST
 from loader import dp, bot, SSL_CERTIFICATE, ssl_context
 
 
